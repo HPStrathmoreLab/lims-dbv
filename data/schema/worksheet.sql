@@ -1,0 +1,20 @@
+CREATE TABLE `worksheet` (
+  `id` int(14) NOT NULL AUTO_INCREMENT,
+  `cdc_worksheet_no` varchar(100) NOT NULL,
+  `date_created` varchar(100) NOT NULL,
+  `date_cut` date NOT NULL,
+  `updated_by` int(14) DEFAULT NULL,
+  `reviewed_by` int(14) DEFAULT NULL,
+  `created_by` int(14) NOT NULL,
+  `flag` int(1) DEFAULT '0',
+  `date_run` date DEFAULT NULL,
+  `date_reviewed` date DEFAULT NULL,
+  `lab` int(14) DEFAULT NULL,
+  `review_2_by` int(14) DEFAULT NULL,
+  `review_2_date` date DEFAULT NULL,
+  `status` int(14) DEFAULT NULL,
+  `date_cancelled` date DEFAULT NULL,
+  `cancelled_by` int(14) DEFAULT NULL,
+  `date_updated` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
